@@ -27,7 +27,7 @@ if (button_item.length > 0 && current_player != null && button_restart != null) 
         player_turn = 1;
         game = [0,0,0,0,0,0,0,0,0];
         count = 0;
-        button_item.forEach(item => [item.innerText = '',item.classList.remove('bg-green', 'bg-velha')]);
+        button_item.forEach(item => [item.innerText = '',item.classList.remove('bg-green', 'bg-velha'),item.disabled = false]);
     }
     const checkByIndexs = (index_01, index_02, index_03) => {
         if ((game[index_01] !== 0 && game[index_02] !== 0 && game[index_03] !== 0) && (game[index_01] === game[index_02]) && game[index_02] === game[index_03]) {
