@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #252525;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 100vh;
+}
+.d-block {display: block !important;}
+.bg-green {background-color: #089208 !important;}
+.green {color: #089208 !important;}
+.bg-velha {background-color: burlywood !important;}
+.velha {color: burlywood !important;}
+
+/* begin section hero */
+.section-hero {
+    margin: 30px auto;
+    max-width: 350px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: #f5f5f5;
+    padding: 30px;
+}
+.section-hero > header > h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.section-hero > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+.section-hero > div > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #252525;
+    background-color: #FFFFFF;
+    height: 100px;
+    border: 0;
+    -webkit-box-shadow: -2px 4px 5px 3px rgba(37,37,37,0.1); 
+    box-shadow: -2px 4px 5px 3px rgba(37,37,37,0.1);
+}
+.section-hero > div > button:hover {
+    background-color: #ebebeb;
+}
+.section-hero > div > button:disabled {
+    background-color: #FFFFFF;
+    cursor: initial;
+}
+.section-hero > article {
+    margin-top: 30px;
+    text-align: center;
+}
+.section-hero > article > header > h2 {
+    margin-bottom: 10px;
+}
+.section-hero > div > button, .section-hero > article > header > button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.section-hero > article > header > button {
+    padding: 8px 25px;
+    font-size: 1rem;
+    background-color: #252525;
+    color: #FFFFFF;
+    border: 1px solid #252525;
+}
+.section-hero > article > header > button:hover {
+    color: #252525;
+    background-color: #ebebeb;
+}
+/* end section hero */
